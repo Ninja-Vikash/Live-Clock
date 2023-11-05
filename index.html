@@ -1,54 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock | Live Digital Clock</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <!-- Remix Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+      }
 
-    <!-- Main Script File -->
-    <script src="script.js"></script>
+      .bg-image {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+        filter: brightness(50%);
+        background: url(assets/bg.avif);
+        background-position: center;
+        background-size: cover;
+      }
 
-    <title>Live Clock</title>
+      #date {
+        color: rgb(139, 139, 254);
+        font-size: x-large;
+        text-shadow: 0px 0px 10px black;
+      }
+      #time {
+        font-size: 108px;
+        color: rgb(119, 151, 155);
+        text-shadow: 0px 0px 10px black;
+      }
+      #desc {
+        color: rgb(200, 200, 252);
+        font-weight: 700;
+        font-size: 16px;
+      }
+    </style>
   </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1"
-        >Live Clock<i class="ri-time-fill"></i
-      ></span>
-    </nav>
 
-    <h2 class="text-center my-4">Your Digital Clock is here.</h2>
-    <div class="container my-4">
-      <div class="jumbotron">
-        <h1 class="display-4">Current time is: <span id="time"></span></h1>
-      </div>
+  <body>
+    <div class="container">
+      <div class="bg-image"></div>
+      <h4 id="date"></h4>
+      <h1 id="time"></h1>
+      <h2 id="desc">
+        <span id="element"></span>
+      </h2>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Script for getting time! -->
+    <script>
+      var myDate;
+      var currentDate;
+      var currentMonth;
+      var currentYear;
+      var currentTime;
+      var dayNumber;
+      var date = document.getElementById("date");
+      var time = document.getElementById("time");
+      setInterval(() => {
+        myDate = new Date();
+        currentDate = myDate.getDate();
+        currentMonth = myDate.getMonth();
+        currentYear = myDate.getFullYear();
+        currentTime = myDate.toLocaleTimeString();
+        dayNumber = myDate.getDay();
+        switch (dayNumber) {
+          case 1: {
+            currentDay = "MON";
+            break;
+          }
+          case 2: {
+            currentDay = "TUE";
+            break;
+          }
+          case 3: {
+            currentDay = "WED";
+            break;
+          }
+          case 4: {
+            currentDay = "THU";
+            break;
+          }
+          case 5: {
+            currentDay = "FRI";
+            break;
+          }
+          case 6: {
+            currentDay = "SAT";
+            break;
+          }
+          case 0: {
+            currentDay = "SUN";
+            break;
+          }
+          default: {
+            currentDate = "ERR";
+            break;
+          }
+        }
+        date.innerHTML =
+          currentYear +
+          "-" +
+          currentMonth +
+          "-" +
+          currentDate +
+          " " +
+          currentDay;
+        time.innerHTML = currentTime;
+      }, 1000);
+    </script>
+
+    <!-- Typed Js Script! -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "LOADING...",
+          "LIVE DIGITAL CLOCK",
+          "DEVELOPED BY TAILWIND CSS",
+          "VUE JS PROJECT",
+          "LIVE DIGITAL CLOCK",
+        ],
+        typeSpeed: 40,
+      });
+    </script>
   </body>
 </html>
