@@ -4,50 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clock | Live Digital Clock</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      .container {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: Poppins, Arial, Helvetica, sans-serif;
-      }
-
-      .bg-image {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: -10;
-        filter: brightness(50%);
-        background: url(assets/bg.avif);
-        background-position: center;
-        background-size: cover;
-      }
-
-      #date {
-        color: rgb(139, 139, 254);
-        font-size: x-large;
-        text-shadow: 0px 0px 10px black;
-      }
-      #time {
-        font-size: 108px;
-        color: rgb(119, 151, 155);
-        text-shadow: 0px 0px 10px black;
-      }
-      #desc {
-        color: rgb(200, 200, 252);
-        font-weight: 700;
-        font-size: 16px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -61,67 +18,7 @@
     </div>
 
     <!-- Script for getting time! -->
-    <script>
-      var myDate;
-      var currentDate;
-      var currentMonth;
-      var currentYear;
-      var currentTime;
-      var dayNumber;
-      var date = document.getElementById("date");
-      var time = document.getElementById("time");
-      setInterval(() => {
-        myDate = new Date();
-        currentDate = myDate.getDate();
-        currentMonth = myDate.getMonth();
-        currentYear = myDate.getFullYear();
-        currentTime = myDate.toLocaleTimeString();
-        dayNumber = myDate.getDay();
-        switch (dayNumber) {
-          case 1: {
-            currentDay = "MON";
-            break;
-          }
-          case 2: {
-            currentDay = "TUE";
-            break;
-          }
-          case 3: {
-            currentDay = "WED";
-            break;
-          }
-          case 4: {
-            currentDay = "THU";
-            break;
-          }
-          case 5: {
-            currentDay = "FRI";
-            break;
-          }
-          case 6: {
-            currentDay = "SAT";
-            break;
-          }
-          case 0: {
-            currentDay = "SUN";
-            break;
-          }
-          default: {
-            currentDate = "ERR";
-            break;
-          }
-        }
-        date.innerHTML =
-          currentYear +
-          "-" +
-          currentMonth +
-          "-" +
-          currentDate +
-          " " +
-          currentDay;
-        time.innerHTML = currentTime;
-      }, 1000);
-    </script>
+    <script src="script.js"></script>
 
     <!-- Typed Js Script! -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
