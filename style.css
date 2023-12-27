@@ -82,7 +82,6 @@
   background-size: cover;
   background-position: center;
   transform: translateX(0px);
-  outline: 3px solid white;
 }
 .icon:nth-child(2){
   background: url(./assets/fog.avif);
