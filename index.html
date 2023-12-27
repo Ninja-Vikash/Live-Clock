@@ -3,18 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clock | Live Digital Clock</title>
+    <title>Digital Clock | Multi-Theme</title>
     <link rel="stylesheet" href="style.css">
+    <!-- ========== ICON =========== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
   </head>
 
   <body>
+    <!-- ========= Clock Body ======== -->
     <div class="container">
-      <div class="bg-image"></div>
+      <div class="bg-image" id="backgroundImg"></div>
       <h4 id="date"></h4>
       <h1 id="time"></h1>
       <h2 id="desc">
         <span id="element"></span>
       </h2>
+    </div>
+
+    <!-- ============ Theme Changer ============= -->
+    <div class="switch">
+      <div class="icon" id="home"></div>
+      <div class="icon" id="fog"></div>
+      <div class="icon" id="moon"></div>
+      <div class="icon" id="forest"></div>
+      <div class="icon" id="raccon"></div>
+      <div class="icon" id="squirrel"></div>
     </div>
 
     <!-- Script for getting time! -->
@@ -25,16 +41,18 @@
 
     <!-- Setup and start animation! -->
     <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "LOADING...",
-          "LIVE DIGITAL CLOCK",
-          "DEVELOPED BY TAILWIND CSS",
-          "VUE JS PROJECT",
-          "LIVE DIGITAL CLOCK",
-        ],
-        typeSpeed: 40,
-      });
+
+        var typed = new Typed("#element", {
+          strings: [
+            "Loading App...",
+            "This is Digital Clock",
+            "developed by ninja-vikash",
+            "with multiple themes available",
+            "Digital Clock | GitHub/ninja-vikash",
+          ],
+          typeSpeed: 50,
+        });
+
     </script>
   </body>
 </html>
