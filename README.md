@@ -1,5 +1,5 @@
-# <a href="https://ninja-vikash.github.io/Live-Clock/" >LIVE CLOCK🕔</a>
-Click ⬆️
+#Live Clock
+🕔 <a href="https://ninja-vikash.github.io/Live-Clock/" >Live Clock</a>
 
 It is a simple digital clock, You can check the exact time, current day, and date with a beautiful background.
 
