@@ -2,8 +2,6 @@
 
 ### A live clock app that provides us with dates and times and we have multiple themes.
 
-<a href="https://ninja-vikash.github.io/Digital-Clock/" >Web Preview Here</a>
-
 ![Preview](https://github.com/Ninja-Vikash/myassets/blob/main/LiveClock/thumbnail.png)
 > mydigitalclock preview
 
