@@ -8,4 +8,4 @@ It is a simple digital clock, You can check the exact time, current day, and dat
 
 **Preview**
 
-![Preview](https://github.com/Ninja-Vikash/Assets/blob/main/LiveClock/LiveClock-Main.png)
+![Preview](https://github.com/Ninja-Vikash/myassets/blob/main/LiveClock/thumbnail.png)
