@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  overflow: hidden;
+}
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -20,18 +25,18 @@
   position: absolute;
   z-index: -10;
   filter: brightness(50%);
-  background: url(assets/bg-img.avif);
+  background: url(assets/moon.avif);
   background-position: center;
   background-size: cover;
 }
 
 #date {
-  padding : 4px 80px;
+  padding: 4px 80px;
   color: white;
   background-color: #fff4;
   font-size: x-large;
   text-shadow: 0px 0px 10px black;
-  border : 2px solid white;
+  border: 2px solid white;
   border-radius: 12px;
 }
 #time {
@@ -45,29 +50,45 @@
   font-size: 16px;
 }
 
-
 .switch {
   position: absolute;
   z-index: 20;
-  top : 5px;
-  right : 5px;
-  height : 460px;
-  width : 106px;
+  top: 5px;
+  right: 5px;
+  height: 460px;
+  width: 106px;
   /* background-color: red; */
-  display : flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 10px;
+  gap: 10px;
   overflow: hidden;
 }
 
+@media screen and (max-width: 1000px) {
+  .switch {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: end;
+  }
+}
+
 .icon {
-  width : 100px;
-  height : 66px;
+  width: 100px;
+  height: 66px;
   border-radius: 10px;
   transform: translateX(50px);
   transition: transform ease 0.4s;
+}
+
+@media screen and (max-width: 1000px) {
+  .icon {
+    transform: translateY(20px);
+  }
 }
 
 .icon:hover {
@@ -77,33 +98,33 @@
   transform: translateX(0px);
 }
 
-.icon:nth-child(1){
+.icon:nth-child(3) {
   background: url(./assets/bg-img.avif);
   background-size: cover;
   background-position: center;
-  transform: translateX(0px);
 }
-.icon:nth-child(2){
+.icon:nth-child(2) {
   background: url(./assets/fog.avif);
   background-size: cover;
   background-position: center;
 }
-.icon:nth-child(3){
+.icon:nth-child(1) {
   background: url(./assets/moon.avif);
   background-size: cover;
   background-position: center;
+  transform: translateX(0px);
 }
-.icon:nth-child(4){
+.icon:nth-child(4) {
   background: url(./assets/forest.avif);
   background-size: cover;
   background-position: center;
 }
-.icon:nth-child(5){
+.icon:nth-child(5) {
   background: url(./assets/raccon.avif);
   background-size: cover;
   background-position: center;
 }
-.icon:nth-child(6){
+.icon:nth-child(6) {
   background: url(./assets/squirrel.avif);
   background-size: cover;
   background-position: center;

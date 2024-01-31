@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Clock | Multi-Theme</title>
+    <title>mydigitalclock</title>
     <link rel="stylesheet" href="style.css">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
     <!-- ========== ICON =========== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-    <link rel="manifest" href="/icon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.io.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -23,7 +25,7 @@
       </h2>
     </div>
 
-    <!-- ============ Theme Changer ============= -->
+    <!-- ============ Theme ============= -->
     <div class="switch">
       <div class="icon" id="home"></div>
       <div class="icon" id="fog"></div>
@@ -42,15 +44,17 @@
     <!-- Setup and start animation! -->
     <script>
 
+      const githubIcon = ['<i class="ri-github-fill"></i>']
+
         var typed = new Typed("#element", {
           strings: [
-            "Loading App...",
-            "This is Digital Clock",
+            "Loading Clock...",
+            "This is mydigitalclock",
             "developed by ninja-vikash",
-            "with multiple themes available",
-            "Digital Clock | GitHub/ninja-vikash",
+            "multiple themes in mydigitalclock",
+            `${githubIcon} ninja-vikash/mydigitalclock`,
           ],
-          typeSpeed: 50,
+          typeSpeed: 60,
         });
 
     </script>

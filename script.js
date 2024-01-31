@@ -32,7 +32,7 @@ let forest = document.getElementById('forest')
 let raccon = document.getElementById('raccon')
 
 homeIcon.addEventListener('click',()=>{
-    homeBg.style.backgroundImage = 'url(assets/bg-img.avif)';
+    homeBg.style.backgroundImage = 'url(assets/moon.avif)';
     homeIcon.style.transform = 'translateX(0px)';
     fog.style.transform = 'translateX(50px)'
     moon.style.transform = 'translateX(50px)';
@@ -52,7 +52,7 @@ fog.addEventListener('click',()=>{
 })
 
 moon.addEventListener('click',()=>{
-  homeBg.style.backgroundImage = 'url(assets/moon.avif)';
+  homeBg.style.backgroundImage = 'url(assets/bg-img.avif)';
   homeIcon.style.transform = 'translateX(50px)';
   fog.style.transform = 'translateX(50px)'
   moon.style.transform = 'translateX(0px)';
