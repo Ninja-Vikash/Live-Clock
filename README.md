@@ -1,11 +1,12 @@
-# <a href="https://ninja-vikash.github.io/Live-Clock/" >🕔 Live Clock</a>
+# <a href="https://ninja-vikash.github.io/Live-Clock/" >🕔 mydigitalclock</a>
 
-It is a simple digital clock, You can check the exact time, current day, and date with multiple themes
+### A live clock app that provides us with dates and times and we have multiple themes.
 
-<a href="https://ninja-vikash.github.io/Digital-Clock/" >Web Preview Here</a>
-### Used components 
-**HTML** | **CSS** | **JavaScript** | **TypedJS**
+![Preview](https://github.com/Ninja-Vikash/myassets/blob/main/LiveClock/thumbnail.png)
+> mydigitalclock preview
 
-**Preview**
-
-![Preview](https://github.com/Ninja-Vikash/Assets/blob/main/LiveClock/LiveClock-Main.png)
+### Description
+1. HTML used to create the skeleton
+2. CSS used to stying
+3. Javascript for interaction
+4. Typedjs
