@@ -15,3 +15,10 @@
 Explore the live clock app and witness the fusion of design and functionality.
 
 Happy timekeeping! ⏰✨
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Ninja-Vikash/mydigitalclock.git
