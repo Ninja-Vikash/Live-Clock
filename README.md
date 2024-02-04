@@ -1,12 +1,17 @@
-# <a href="https://ninja-vikash.github.io/Live-Clock/" >🕔 mydigitalclock</a>
+# 🕔 mydigitalclock
 
-### A live clock app that provides us with dates and times and we have multiple themes.
+### A live clock app that provides dates and times with multiple themes.
 
-![Preview](https://github.com/Ninja-Vikash/myassets/blob/main/LiveClock/thumbnail.png)
-> mydigitalclock preview
+![mydigitalclock Preview](https://github.com/Ninja-Vikash/asset-cloud/blob/main/myDigitalClock/thumbnail.png)
+> Preview of mydigitalclock
 
 ### Description
-1. HTML used to create the skeleton
-2. CSS used to stying
-3. Javascript for interaction
-4. Typedjs
+- **HTML:** Crafted the skeleton of the clock.
+- **CSS:** Styled the clock for a visually appealing experience.
+- **JavaScript:** Implemented interactive features for enhanced user engagement.
+- **Typed.js:** Added dynamic text animations for a modern touch.
+
+### Preview
+Explore the live clock app and witness the fusion of design and functionality.
+
+Happy timekeeping! ⏰✨
