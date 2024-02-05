@@ -31,21 +31,32 @@ body {
 }
 
 #date {
+  position: relative;
+  z-index: 100;
+  margin-block-end: 20px;
   padding: 4px 80px;
   color: white;
-  background-color: #fff4;
+  background-color: #0000008b;
   font-size: x-large;
-  text-shadow: 0px 0px 10px black;
-  border: 2px solid white;
-  border-radius: 12px;
+  font-weight: 500;
+  text-shadow: 0px 0px 1px rgb(255, 255, 255);
+  border: 1px solid white;
+  border-radius: 5px;
 }
 #time {
+  padding: 0px 50px;
+  border-radius: 14px;
+  position: relative;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.362);
   font-size: 108px;
-  color: white;
-  text-shadow: 0px 0px 10px black;
+  color: #ffffff;
 }
 #desc {
-  color: white;
+  position: relative;
+  z-index: 100;
+  margin-block-start: 20px;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   font-size: 16px;
 }
@@ -57,7 +68,6 @@ body {
   right: 5px;
   height: 460px;
   width: 106px;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +92,7 @@ body {
   height: 66px;
   border-radius: 10px;
   transform: translateX(50px);
-  transition: transform ease 0.4s;
+  transition: transform linear 0.3s;
 }
 
 @media screen and (max-width: 1000px) {
@@ -93,8 +103,7 @@ body {
 
 .icon:hover {
   cursor: pointer;
-  scale: 0.94;
-  outline: 3px solid white;
+  outline: 2px solid white;
   transform: translateX(0px);
 }
 

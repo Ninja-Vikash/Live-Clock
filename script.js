@@ -1,13 +1,14 @@
 var myDate;
 var currentDate;
 var currentMonth;
-var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 var currentYear;
 var currentTime;
-var days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY']
+const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY']
 var dayNumber;
 var date = document.getElementById("date");
 var time = document.getElementById("time");
+
 setInterval(() => {
   myDate = new Date();
   currentDate = myDate.getDate();
@@ -16,7 +17,7 @@ setInterval(() => {
   currentTime = myDate.toLocaleTimeString();
   dayNumber = myDate.getDay();
   date.innerHTML =
-    currentDate + " " + months[currentMonth] + " " + currentYear + " , " + days[dayNumber];
+    `${currentDate}  ${months[currentMonth]} ${currentYear}  ${days[dayNumber]}`;
   time.innerHTML = currentTime;
 }, 1000);
 
