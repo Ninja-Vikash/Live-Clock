@@ -2,7 +2,7 @@
 
 ### A live clock app that provides dates and times with multiple themes.
 
-![mydigitalclock Preview](https://github.com/Ninja-Vikash/asset-cloud/blob/main/myDigitalClock/thumbnail.png)
+![mydigitalclock Preview](https://github.com/Ninja-Vikash/asset-cloud/blob/main/myDigitalClock/preview.png)
 > Preview of mydigitalclock
 
 ### Description
